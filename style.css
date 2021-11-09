@@ -102,6 +102,13 @@ a:active {
   background-color: var(--calc-btn-hover);
   color: var(--calc-body);
 }
+.btn:active {
+  background-color: var(--calc-btn-hover);
+  color: var(--calc-body);
+}
+.btn:click {
+  background-color: none;
+}
 .c {
   background-color: var(--calc-other-btn);
   color: var(--calc-btn);
