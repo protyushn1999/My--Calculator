@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --bg-color: #3b4664;
+  --text-color: #c9cde4;
+  --calc-head: #181f32;
+  --calc-body: #262c46;
+  --calc-btn: #eae3db;
+  --calc-btn-hover: #d6d6d6;
+  --calc-equal-btn: #d13f30;
+  --calc-other-btn: #647299;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Josefin Sans", "Spartan", sans-serif;
+  font-weight: 500;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.margin {
+  margin: 0.5em;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+.center-last {
+  display: flex;
+  justify-content: space-between;
+}
+#heading {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0.5em;
+  margin-top: 1em;
+  letter-spacing: 0.182em;
+  font-weight: 600;
+  color:  #ffca66;
+}
+.calc-container {
+  background-color: var(--calc-body);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-between;
+  margin: 16px;
+  border-radius: 0.4em;
+  padding: 1em;
+  margin-top: 0;
+}
+.calc-header {
+  background-color: var(--calc-head);
+  margin: 0.5em;
+  margin-top: 0;
+  border-radius: 0.4em;
+  padding: 1em;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.btn {
+  background-color: var(--calc-btn);
+  width: 4em;
+  height: 3em;
+  color: var(--calc-head);
+  border: none;
+  border-radius: 0.6em;
+  padding: 1em;
+  font-size: 1.6em;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: "Spartan", sans-serif;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+.btn:hover {
+  background-color: var(--calc-btn-hover);
+  color: var(--calc-body);
+}
+.c {
+  background-color: var(--calc-other-btn);
+  color: var(--calc-btn);
+  font-size: 1.6em;
+  font-weight: 800;
+  font-family: "Spartan", sans-serif;
+  
+}
+.c:hover {
+  background-color: var(--calc-btn-hover);
+  color: var(--calc-body);
+}
+.equal {
+  background-color: var(--calc-equal-btn);
+  color: var(--calc-head);
+  font-size: 1.6em;
+  font-weight: 800;
+  font-family: "Spartan", sans-serif;
+}
